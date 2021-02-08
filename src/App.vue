@@ -5,7 +5,7 @@
     <router-link to="/">Home</router-link> |
     <router-link to="/about">About</router-link>
   </div>-->
-  <main class="pl-64">
+  <main class="pl-64 pr-6">
     <router-view/>
   </main>
 </template>
