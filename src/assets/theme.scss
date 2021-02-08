@@ -1,11 +1,25 @@
 @tailwind base;
 @tailwind components;
-@tailwind utilities;
 
 .input {
   @apply text-blue-brand w-2/4 bg-gray-brand px-3 py-2 rounded-full;
 }
 
-.button-primary {
-  @apply bg-blue-brand text-white rounded-full px-6 py-2 m-2 transition duration-500 select-none focus:outline-none;
+
+.button {
+  @apply px-6 py-2 m-2 select-none focus:outline-none;
+
+  &-primary {
+    @apply bg-blue-brand text-white rounded-full;
+  }
+
+  &-secondary {
+    @apply bg-gray-brand text-gray-dark rounded-full;
+  }
 }
+
+.card {
+  @apply border border-gray-brand w-full rounded-lg shadow-md;
+}
+
+@tailwind utilities;
