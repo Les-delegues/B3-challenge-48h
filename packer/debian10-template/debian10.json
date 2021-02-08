@@ -10,26 +10,25 @@
       "Version": "12",
       "guest_os_type": "debian10-64",
       "vmx_data": {
-        "ethernet0.networkName": "VswitchEsioc",
+        "ethernet0.networkName": "Vswitch-Infinity",
         "ethernet0.virtualDev": "e1000",
         "ethernet0.present": "TRUE",
         "virtualHW.version": "10",
         "scsi0.virtualDev": "lsisas1068"
       },
-
-      "remote_type": "esx5",
-      "vmdk_name": "Debian_10_template",
       "remote_host": "",
       "remote_username": "",
       "remote_password": "",
       "remote_datastore": "",
+      "remote_type": "esx5",
+      "vmdk_name": "Debian_10_template",
       "skip_validate_credentials": true,
       "skip_export":"true",
       "remote_output_directory": "Clone_VM_Template/Debian_10_template",
 
 
-      "iso_url": "../ISO/debian-10.4.0-amd64-netinst.iso",
-      "iso_checksum": "md5:e2ddc8268e4c164c32b4ba25be52c9af",
+      "iso_url": "../ISO/debian-10.7.0-amd64-netinst.iso",
+      "iso_checksum": "md5:7227c779619e6c8a0a1b0f55d10c6270",
       "boot_wait": "5s",
       "boot_command": [
         "<esc><wait>",

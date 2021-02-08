@@ -36,7 +36,7 @@
       "vmdk_name": "ubuntu_1804_template",
       "remote_username": "",
       "remote_password": "",
-      "remote_datastore": "",
+      "remote_datastore": "datastore1",
       "remote_output_directory": "Clone_VM_Template/ubuntu_1804_template",
       "skip_validate_credentials": true,
       "skip_export":"true",
@@ -52,7 +52,7 @@
       "tools_upload_flavor": "linux",
       "vm_name": "ubuntu_1804_template",
       "vmx_data": {
-        "ethernet0.networkName": "VswitchEsioc",
+        "ethernet0.networkName": "Vswitch-Infinity",
         "ethernet0.virtualDev": "e1000",
         "ethernet0.present": "TRUE",
         "virtualHW.version": "10",
