@@ -1,14 +1,14 @@
 import { Store } from 'vuex';
-
-import { state as CalendarState } from './modules/calendarInfo/state';
 import calendarInfos from './modules/calendarInfo';
-
-export type RootState = {
-  calendarInfos: typeof CalendarState;
-};
+import associationInfos from './modules/associationInfo';
+import user from './modules/user';
+import licenses from './modules/license';
 
 export default new Store({
   modules: {
     calendarInfos,
+    associationInfos,
+    user,
+    licenses,
   },
 });
