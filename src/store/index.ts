@@ -1,8 +1,14 @@
-import { createStore } from 'vuex';
-import { calendarInfoModule } from './modules';
+import { Store } from 'vuex';
 
-export default createStore({
+import { state as CalendarState } from './modules/calendarInfo/state';
+import calendarInfos from './modules/calendarInfo';
+
+export type RootState = {
+  calendarInfos: typeof CalendarState;
+};
+
+export default new Store({
   modules: {
-    calendarInfoModule,
+    calendarInfos,
   },
 });

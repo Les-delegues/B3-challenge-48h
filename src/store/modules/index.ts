@@ -1,1 +1,1 @@
-export * from './calendar-info.module';
+export * from './calendarInfo';
