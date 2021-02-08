@@ -8,7 +8,9 @@
       </ul>
       <h4 class="uppercase mt-3">Association</h4>
       <ul>
-        <li class="px-4">Informations</li>
+        <li class="px-4">
+          <router-link to="/informations" exact active-class="opacity-100 font-bold">Informations</router-link>
+        </li>
         <li class="px-4">Documents</li>
         <li class="px-4">Calendrier des aides</li>
       </ul>
