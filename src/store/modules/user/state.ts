@@ -2,7 +2,7 @@ import Role from '../role.h';
 
 export interface User {
   id?: string;
-  role?: Role;
+  roles?: Role[];
   email?: string;
 }
 

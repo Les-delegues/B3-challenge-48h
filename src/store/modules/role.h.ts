@@ -1,5 +1,5 @@
 enum Role {
-  Licence = 'Licence',
+  License = 'License',
   Secretary = 'Secretary',
   President = 'President',
   Treasurer = 'Treasurer',
