@@ -1,11 +1,15 @@
 import { RootState } from '@/store/root-state';
 import { GetterTree } from 'vuex';
-import { State, User } from './state';
+import Role from '@/store/modules/role.h';
+import { User } from '../authenticatedUser/state';
+import { State } from './state';
 
 export type Getters = {
-  user(state: State): User;
+  users(state: State): User[];
+  licensedUsers(state: State): User[];
 }
 
 export const getters: GetterTree<State, RootState> & Getters = {
-  user: (state) => state.user,
+  users: (state) => state.users,
+  licensedUsers: (state) => state.users.filter((user) => user.roles.includes(Role.Licensed)),
 };

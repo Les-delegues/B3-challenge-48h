@@ -6,6 +6,7 @@ import { getters } from './getters';
 import { mutations } from './mutations';
 
 const store: Module<State, RootState> = {
+  namespaced: true,
   state,
   getters,
   mutations,
