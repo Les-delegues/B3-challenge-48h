@@ -1,7 +1,6 @@
 import { RootState } from '@/store/root-state';
 import { GetterTree } from 'vuex';
-import { License } from '../license.module';
-import { State } from './state';
+import { License, State } from './state';
 
 export type Getters = {
   licenses(state: State): License[];
