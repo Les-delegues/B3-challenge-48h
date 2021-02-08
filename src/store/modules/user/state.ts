@@ -1,15 +1,31 @@
 import Role from '../role.h';
-
-export interface User {
-  id?: string;
-  roles?: Role[];
-  email?: string;
-}
+import { User } from '../authenticatedUser/state';
 
 export type State = {
-  user: User;
+  users: User[];
 }
 
 export const state: State = {
-  user: {},
+  users: [
+    {
+      id: '1',
+      roles: [Role.President, Role.Licensed],
+      email: 'sebastien.boursier@ccba.com',
+    },
+    {
+      id: '2',
+      roles: [Role.Secretary, Role.Licensed],
+      email: 'marie.clement@ccba.com',
+    },
+    {
+      id: '3',
+      roles: [Role.Treasurer, Role.Licensed],
+      email: 'johnathan.segundus@ccba.com',
+    },
+    {
+      id: '4',
+      roles: [Role.Licensed],
+      email: 'olivier.verrier@ccba.com',
+    },
+  ],
 };

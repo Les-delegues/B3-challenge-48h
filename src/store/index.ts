@@ -1,14 +1,16 @@
-import { Store } from 'vuex';
+import { createStore } from 'vuex';
 import calendarInfos from './modules/calendarInfo';
 import associationInfos from './modules/associationInfo';
 import user from './modules/user';
-import licenses from './modules/license';
+import authenticatedUser from './modules/authenticatedUser';
+import license from './modules/license';
 
-export default new Store({
+export default createStore({
   modules: {
     calendarInfos,
     associationInfos,
     user,
-    licenses,
+    license,
+    authenticatedUser,
   },
 });

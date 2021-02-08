@@ -1,11 +1,10 @@
 import { ActionContext, ActionTree } from 'vuex';
 import { RootState } from '@/store/root-state';
-import { State } from './state';
-import { UserMutationTypes, Mutations } from './mutations';
-import { User } from '../authenticatedUser/state';
+import { User, State } from './state';
+import { AuthenticatedUserMutationTypes, Mutations } from './mutations';
 
-export enum UsersActionTypes {
-  CREATE_USER = 'CREATE_USER',
+export enum AuthenticatedUserActionTypes {
+  SET_USER = 'SET_USER',
 }
 
 type AugmentedActionContext = {
@@ -16,14 +15,14 @@ type AugmentedActionContext = {
 } & Omit<ActionContext<State, RootState>, 'commit'>
 
 export interface Actions {
-  [UsersActionTypes.CREATE_USER](
+  [AuthenticatedUserActionTypes.SET_USER](
     { commit }: AugmentedActionContext,
-    payload: User
+     events: User
   ): void;
 }
 
 export const actions: ActionTree<State, RootState> & Actions = {
-  [UsersActionTypes.CREATE_USER]: ({ commit }, payload: User) => {
-    commit(UserMutationTypes.CREATE_USER, payload);
+  [AuthenticatedUserActionTypes.SET_USER]: ({ commit }, payload: User) => {
+    commit(AuthenticatedUserMutationTypes.SET_USER, payload);
   },
 };
