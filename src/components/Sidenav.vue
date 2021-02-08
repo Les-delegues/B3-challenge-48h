@@ -21,7 +21,7 @@
       <h4 class="uppercase mt-3 opacity-80">Mes modules</h4>
       <ul>
         <li class="px-4">
-          <router-link to="/licencies" exact class="opacity-80" active-class="opacity-100 font-bold">Les licenciés</router-link>
+          <router-link to="/licencees" exact class="opacity-80" active-class="opacity-100 font-bold">Les licenciés</router-link>
         </li>
         <li class="px-4">
           <router-link to="/matchs" exact class="opacity-80" active-class="opacity-100 font-bold">Les matchs</router-link>
