@@ -1,7 +1,5 @@
-<<<<<<< Updated upstream
-export * from './calendarInfo';
-=======
-export * from './calendar-info.module';
-export * from './association-info.module';
-export * from './license.module';
->>>>>>> Stashed changes
+export * from './associationInfo'
+export * from './calendarInfo'
+export * from './license'
+export * from './user'
+export * from './role.h'

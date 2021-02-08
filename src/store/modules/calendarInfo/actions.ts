@@ -1,5 +1,5 @@
 import { ActionContext, ActionTree } from 'vuex';
-import { RootState } from '@/store';
+import { RootState } from '@/store/root-state';
 import { State, Event } from './state';
 import { CalendarInfoMutationTypes, Mutations } from './mutations';
 
