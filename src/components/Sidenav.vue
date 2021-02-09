@@ -45,7 +45,7 @@
       <ul>
         <li class="px-4">
           <router-link
-            to="/licencees"
+            to="/licensees"
             class="opacity-80 hover:opacity-100"
             active-class="opacity-100 font-bold"
             >Les licenciés</router-link
