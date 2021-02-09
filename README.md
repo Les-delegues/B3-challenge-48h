@@ -46,3 +46,10 @@ Forest Gump.
 - GUILMER Enzo
 - TABBARA Louna
 - VERRIER Olivier
+
+
+## Bonus
+
+La pyramide de bière descendue pour ce challenge :
+
+![Bieres !!!](src/assets/bieres.jpeg)
