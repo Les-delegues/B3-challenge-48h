@@ -1,5 +1,5 @@
 <template>
-  <h1 class="text-2xl font-bold py-4 text-blue-brand">Licenciés</h1>
+  <h1 class="text-2xl font-bold py-4 text-blue-brand font-mina">Les licenciés</h1>
 
   <Datatable :items="this.licensedUsers" :columns="this.columns" />
 </template>
@@ -13,7 +13,11 @@ export default {
     licensedUsers: [],
     columns: [
       { key: 'email', name: 'Email' },
-      { key: 'license.licenseNumber', name: 'Numéro de licence', value: (user) => (user.license ? user.license.licenseNumber : '-') },
+      {
+        key: 'license.licenseNumber',
+        name: 'Numéro de licence',
+        value: (user) => (user.license ? user.license.licenseNumber : '-'),
+      },
       { key: 'roles', name: 'Roles', value: (user) => user.roles.join(', ') },
     ],
   }),
@@ -34,6 +38,4 @@ export default {
 };
 </script>
 
-<style>
-
-</style>
+<style></style>

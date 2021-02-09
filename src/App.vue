@@ -5,8 +5,8 @@
     <router-link to="/">Home</router-link> |
     <router-link to="/about">About</router-link>
   </div>-->
-  <main class="pl-64 pr-6">
-    <router-view/>
+  <main class="pl-64 pr-6 pt-24">
+    <router-view />
   </main>
 </template>
 <script>

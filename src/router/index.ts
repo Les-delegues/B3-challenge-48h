@@ -1,30 +1,38 @@
 import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router';
 
+export enum RouteName {
+  DASHBOARD = 'DASHBOARD',
+  INFORMATIONS = 'INFORMATIONS',
+  INFORMATIONS_EDIT = 'INFORMATIONS_EDIT',
+  DOCUMENTS = 'DOCUMENTS',
+  LICENSEES = 'LICENSEES',
+}
+
 const routes: Array<RouteRecordRaw> = [
   {
     path: '/',
-    name: 'Home',
+    name: RouteName.DASHBOARD,
     component: () => import(/* webpackChunkName: "about" */ '../views/Home.vue'),
   },
   {
     path: '/informations',
-    name: 'Informations',
-    component: () => import(/* webpackChunkName: "about" */ '../views/Informations.vue'),
+    name: RouteName.INFORMATIONS,
+    component: () => import(/* webpackChunkName: "about" */ '../views/Informations/index.vue'),
   },
   {
-    path: '/informations/edition',
-    name: 'EDIT Informations',
-    component: () => import(/* webpackChunkName: "about" */ '../views/EditInformations.vue'),
+    path: '/informations/edit',
+    name: RouteName.INFORMATIONS_EDIT,
+    component: () => import(/* webpackChunkName: "about" */ '../views/Informations/Edit.vue'),
   },
   {
     path: '/documents',
-    name: 'Documents',
-    component: () => import(/* webpackChunkName: "about" */ '../views/Documents.vue'),
+    name: RouteName.DOCUMENTS,
+    component: () => import(/* webpackChunkName: "about" */ '../views/Documents/Detail.vue'),
   },
   {
-    path: '/licencees',
-    name: 'Licencies',
-    component: () => import(/* webpackChunkName: "about" */ '../views/Licencee.vue'),
+    path: '/licensees',
+    name: RouteName.LICENSEES,
+    component: () => import(/* webpackChunkName: "about" */ '../views/Licensee.vue'),
   },
 ];
 
