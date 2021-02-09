@@ -1,5 +1,5 @@
 <template>
-  <h1 class="text-2xl font-bold py-4 text-blue-brand font-mina">Les licenciés</h1>
+  <h1 class="text-2xl font-bold py-4 font-mina">Les licenciés</h1>
 
   <Datatable :items="this.licensedUsers" :columns="this.columns" />
 </template>

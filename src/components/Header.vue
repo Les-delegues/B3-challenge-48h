@@ -7,9 +7,7 @@
             <router-link to="/">
               <div class="flex items-center">
                 <img class="block h-12 w-12" src="../assets/logo.png" alt="CCBA" />
-                <h1 class="pl-4 font-bold text-blue-brand font-mina text-2xl">
-                  CCBA - HelloPlatform
-                </h1>
+                <h1 class="pl-4 font-bold font-mina text-2xl">CCBA - HelloPlatform</h1>
               </div>
             </router-link>
           </div>

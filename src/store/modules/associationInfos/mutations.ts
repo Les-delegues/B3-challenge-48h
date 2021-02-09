@@ -11,6 +11,14 @@ export type Mutations<S = State> = {
 
 export const mutations: MutationTree<State> & Mutations = {
   [AssociationInfosMutationTypes.SET_ASSOCIATION_INFOS](state, payload: State) {
-    Object.assign(state, payload);
+    state.name = payload.name;
+    state.acronym = payload.acronym;
+    state.object = payload.object;
+    state.addressLine1 = payload.addressLine1;
+    state.addressLine2 = payload.addressLine2;
+    state.zipCode = payload.zipCode;
+    state.city = payload.city;
+    state.country = payload.country;
+    state.creationDate = payload.creationDate;
   },
 };
