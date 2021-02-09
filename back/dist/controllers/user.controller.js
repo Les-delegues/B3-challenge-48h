@@ -51,10 +51,11 @@ exports.CredentialsRequestBody = {
     },
 };
 let UserController = class UserController {
-    constructor(jwtService, userService, user, userRepository) {
+    constructor(jwtService, userService, user, res, userRepository) {
         this.jwtService = jwtService;
         this.userService = userService;
         this.user = user;
+        this.res = res;
         this.userRepository = userRepository;
     }
     async login(credentials) {
@@ -64,7 +65,9 @@ let UserController = class UserController {
         const userProfile = this.userService.convertToUserProfile(user);
         // create a JSON Web Token based on the user profile
         const token = await this.jwtService.generateToken(userProfile);
-        return { token };
+        this.res.setHeader('Access-Control-Expose-Headers', 'X-Token');
+        this.res.setHeader('X-Token', token);
+        return user;
     }
     async whoAmI(currentUserProfile) {
         return currentUserProfile[security_1.securityId];
@@ -154,8 +157,9 @@ UserController = tslib_1.__decorate([
     tslib_1.__param(0, core_1.inject(authentication_jwt_1.TokenServiceBindings.TOKEN_SERVICE)),
     tslib_1.__param(1, core_1.inject(authentication_jwt_1.UserServiceBindings.USER_SERVICE)),
     tslib_1.__param(2, core_1.inject(security_1.SecurityBindings.USER, { optional: true })),
-    tslib_1.__param(3, repository_1.repository(user_repository_1.UserRepository)),
-    tslib_1.__metadata("design:paramtypes", [Object, authentication_jwt_1.MyUserService, Object, user_repository_1.UserRepository])
+    tslib_1.__param(3, core_1.inject(rest_1.RestBindings.Http.RESPONSE)),
+    tslib_1.__param(4, repository_1.repository(user_repository_1.UserRepository)),
+    tslib_1.__metadata("design:paramtypes", [Object, authentication_jwt_1.MyUserService, Object, Object, user_repository_1.UserRepository])
 ], UserController);
 exports.UserController = UserController;
 //# sourceMappingURL=user.controller.js.map
