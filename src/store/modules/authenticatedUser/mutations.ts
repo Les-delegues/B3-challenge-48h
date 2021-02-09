@@ -11,6 +11,6 @@ export type Mutations<S = State> = {
 
 export const mutations: MutationTree<State> & Mutations = {
   [AuthenticatedUserMutationTypes.SET_USER](state, payload: User) {
-    Object.assign(state, payload);
+    state.user = payload;
   },
 };

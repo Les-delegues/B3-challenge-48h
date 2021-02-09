@@ -1,8 +1,8 @@
 {
   "ids": {
     "Todo": 5,
-    "User": 9,
-    "UserCredentials": 6
+    "User": 10,
+    "UserCredentials": 7
   },
   "models": {
     "Todo": {
@@ -12,10 +12,12 @@
       "4": "{\"title\":\"crush rebel scum\",\"desc\":\"Every.Last.One.\",\"id\":4}"
     },
     "User": {
-      "5c26c607-acc2-46b7-8933-dbcb962b0c01": "{\"id\":\"5c26c607-acc2-46b7-8933-dbcb962b0c01\",\"username\":\"nible\",\"email\":\"enzo.guilmer@gmail.com\",\"roles\":[\"President\",\"Licensed\"]}"
+      "5c26c607-acc2-46b7-8933-dbcb962b0c01": "{\"id\":\"5c26c607-acc2-46b7-8933-dbcb962b0c01\",\"username\":\"nible\",\"email\":\"enzo.guilmer@gmail.com\",\"roles\":[\"President\",\"Licensed\"]}",
+      "7ca634b2-f0d0-4e4e-809e-6fab16c854d3": "{\"id\":\"7ca634b2-f0d0-4e4e-809e-6fab16c854d3\",\"username\":\"julien\",\"email\":\"julien@castera.fr\",\"roles\":[\"Licensed\"]}"
     },
     "UserCredentials": {
-      "4883f5e6-a1f9-4a73-b76b-9710e50432f8": "{\"id\":\"4883f5e6-a1f9-4a73-b76b-9710e50432f8\",\"password\":\"$2a$10$GpLd.avqunqku9ijezbkL.JNbjuBu8.eXOgzqCabFN4TirI6vNxwi\",\"userId\":\"5c26c607-acc2-46b7-8933-dbcb962b0c01\"}"
+      "4883f5e6-a1f9-4a73-b76b-9710e50432f8": "{\"id\":\"4883f5e6-a1f9-4a73-b76b-9710e50432f8\",\"password\":\"$2a$10$GpLd.avqunqku9ijezbkL.JNbjuBu8.eXOgzqCabFN4TirI6vNxwi\",\"userId\":\"5c26c607-acc2-46b7-8933-dbcb962b0c01\"}",
+      "2f05e0cb-1fdb-4e47-a89a-bfbfafe676db": "{\"id\":\"2f05e0cb-1fdb-4e47-a89a-bfbfafe676db\",\"password\":\"$2a$10$qNr6u/Er9HWsKQRyyswdUevR4s971YUKubzzuEEgu037.bRjtEv6O\",\"userId\":\"7ca634b2-f0d0-4e4e-809e-6fab16c854d3\"}"
     }
   }
 }
