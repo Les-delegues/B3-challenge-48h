@@ -18,6 +18,10 @@ module.exports = {
         brand: '#f4f6fa',
       },
     },
+    fontFamily: {
+      montserrat: ['Montserrat', 'sans-serif'],
+      mina: ['Mina', 'sans-serif'],
+    },
   },
   variants: {
     extend: {},

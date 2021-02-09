@@ -10,14 +10,14 @@ export enum AssociationInfosActionTypes {
 type AugmentedActionContext = {
   commit<K extends keyof Mutations>(
     key: K,
-    payload: Parameters<Mutations[K]>[1],
+    payload: Parameters<Mutations[K]>[1]
   ): ReturnType<Mutations[K]>;
-} & Omit<ActionContext<State, RootState>, 'commit'>
+} & Omit<ActionContext<State, RootState>, 'commit'>;
 
 export interface Actions {
   [AssociationInfosActionTypes.SET_ASSOCIATION_INFOS](
     { commit }: AugmentedActionContext,
-    event: State,
+    event: State
   ): void;
 }
 
